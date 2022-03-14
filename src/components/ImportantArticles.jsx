@@ -1,18 +1,22 @@
-const NewestArticles = ({ newestArticles }) => {
+const ImportantArticles = ({ importantArticles }) => {
   return (
     <>
       <div className='container my-12 mx-auto px-4 md:px-12 bg-slate-50'>
         <div className='flex flex-wrap -mx-1 lg:-mx-4'>
-          {newestArticles.map((newestArticle) => {
-            const { id, title, url, img, date, from } = newestArticle
+          {importantArticles.map((importantArticle) => {
+            const { id, title, url, img, from } = importantArticle
             return (
               <div
                 key={id}
                 className='my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3'
               >
-                <a href={url}>
+                <a href={url} target='_blank' rel='noreferrer'>
                   <article className='overflow-hidden rounded-lg shadow-lg'>
-                    <img alt='Placeholder' src={img} />
+                    <img
+                      className='object-cover h-48 w-96'
+                      src={img}
+                      alt='Placeholder'
+                    />
 
                     <header className='flex items-center justify-between leading-tight p-2 md:p-4'>
                       <p className='text-lg font-bold'>{title}</p>
@@ -25,7 +29,6 @@ const NewestArticles = ({ newestArticles }) => {
                           {from}
                         </span>
                       </p>
-                      <p className='text-indigo-600 text-sm'>{date}</p>
                     </footer>
                   </article>
                 </a>
@@ -38,4 +41,4 @@ const NewestArticles = ({ newestArticles }) => {
   )
 }
 
-export default NewestArticles
+export default ImportantArticles

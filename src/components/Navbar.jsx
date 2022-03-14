@@ -4,18 +4,12 @@ function Navbar() {
     <div className='navbar bg-neutral text-neutral-content '>
       <div className='flex-1'>
         <Link to='/' className='btn btn-ghost normal-case text-xl'>
-          React Blog
+          React Articles
         </Link>
       </div>
       <div className='flex-none'>
-        <Link to='/react' className='btn btn-ghost'>
-          React
-        </Link>
-        <Link to='/nextjs' className='btn btn-ghost'>
-          Next.js
-        </Link>
-        <Link to='/js' className='btn btn-ghost'>
-          Javascript
+        <Link to='/all-articles' className='btn btn-ghost'>
+          All Articles
         </Link>
       </div>
     </div>

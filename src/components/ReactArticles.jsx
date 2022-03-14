@@ -10,9 +10,13 @@ const ReactArticles = ({ reactArticles }) => {
                 key={id}
                 className='my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3'
               >
-                <a href={url}>
+                <a href={url} target='_blank' rel='noreferrer'>
                   <article className='overflow-hidden rounded-lg shadow-lg'>
-                    <img src={img} alt='img' />
+                    <img
+                      className='object-cover h-48 w-96'
+                      src={img}
+                      alt='Placeholder'
+                    />
 
                     <header className='flex items-center justify-between leading-tight p-2 md:p-4'>
                       <p className='text-lg font-bold hover:underline'>

@@ -8,7 +8,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/react' element={<ReactPage />} />
+          <Route path='/all-articles' element={<ReactPage />} />
         </Routes>
       </Router>
     </>

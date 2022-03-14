@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
-import NewestArticles from '../components/NewestArticles'
-import newestArticlesData from '../data/newestArticlesData'
+import ImportantArticles from '../components/ImportantArticles'
+import importantArticlesData from '../data/importantArticlesData'
 
 function Home() {
-  const [articlesData] = useState(newestArticlesData)
+  const [articlesData] = useState(importantArticlesData)
 
   return (
     <>
@@ -13,10 +13,10 @@ function Home() {
       <Header />
 
       <h1 className='text-3xl font-bold text-center p-5 mt-20 '>
-        Newest Articles
+        Important Articles
       </h1>
 
-      <NewestArticles newestArticles={articlesData} />
+      <ImportantArticles importantArticles={articlesData} />
     </>
   )
 }
