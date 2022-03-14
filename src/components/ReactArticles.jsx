@@ -13,7 +13,7 @@ const ReactArticles = ({ reactArticles }) => {
                 <a href={url} target='_blank' rel='noreferrer'>
                   <article className='overflow-hidden rounded-lg shadow-lg'>
                     <img
-                      className='object-cover h-48 w-96'
+                      className='object-cover h-48 w-full'
                       src={img}
                       alt='Placeholder'
                     />
