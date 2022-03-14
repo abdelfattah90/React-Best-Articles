@@ -1,7 +1,7 @@
-const newestData = [
+const newestArticlesData = [
   {
     id: 1,
-    title: 'The React useEffect Hook for Absolute Beginners',
+    title: 'The React useEffect Hook',
     url: 'https://www.freecodecamp.org/news/react-useeffect-absolute-beginners',
     img: 'https://www.freecodecamp.org/news/content/images/size/w2000/2022/03/react-useeffect-absolute-beginners.png',
     date: 'MARCH 1, 2022',
@@ -49,13 +49,4 @@ const newestData = [
   },
 ]
 
-export default newestData
-
-// {
-//   id: ,
-//   title: '',
-//   url: '',
-//   img: '',
-//   date: '',
-//   from: '',
-// },
+export default newestArticlesData

@@ -1,10 +1,10 @@
-const Newest = ({ newests }) => {
+const NewestArticles = ({ newestArticles }) => {
   return (
     <>
       <div className='container my-12 mx-auto px-4 md:px-12 bg-slate-50'>
         <div className='flex flex-wrap -mx-1 lg:-mx-4'>
-          {newests.map((newest) => {
-            const { id, title, url, img, date, from } = newest
+          {newestArticles.map((newestArticle) => {
+            const { id, title, url, img, date, from } = newestArticle
             return (
               <div
                 key={id}
@@ -12,15 +12,10 @@ const Newest = ({ newests }) => {
               >
                 <a href={url}>
                   <article className='overflow-hidden rounded-lg shadow-lg'>
-                    <img
-                      alt='Placeholder'
-                      className='block h-auto w-full min-h-full'
-                      h
-                      src={img}
-                    />
+                    <img alt='Placeholder' src={img} />
 
                     <header className='flex items-center justify-between leading-tight p-2 md:p-4'>
-                      <h1 className='text-lg'>{title}</h1>
+                      <p className='text-lg font-bold'>{title}</p>
                     </header>
 
                     <footer className='flex items-center justify-between leading-tight py-5 px-2'>
@@ -43,4 +38,4 @@ const Newest = ({ newests }) => {
   )
 }
 
-export default Newest
+export default NewestArticles
