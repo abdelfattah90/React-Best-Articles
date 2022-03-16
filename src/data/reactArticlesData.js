@@ -107,6 +107,20 @@ const reactArticlesData = [
     img: 'https://www.tutomena.com/static/c496fa9c1a46a49d261425d7033e8113/7131f/react-components-tree-1.png',
     from: 'tutomena.com',
   },
+  {
+    id: 16,
+    title: 'React Hooks Fundamentals',
+    url: 'https://www.freecodecamp.org/news/react-hooks-fundamentals/',
+    img: 'https://www.freecodecamp.org/news/content/images/size/w2000/2022/03/freeCodeCamp-Cover.png',
+    from: 'Freecodecamp',
+  },
 ]
 
 export default reactArticlesData
+// {
+//   id: ,
+//   title: '',
+//   url: '',
+//   img: '',
+//   from: '',
+// },
